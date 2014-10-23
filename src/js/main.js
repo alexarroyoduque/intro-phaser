@@ -10,5 +10,7 @@ window.onload = function () {
   game.state.add('menu', ns.Menu);
   game.state.add('game', ns.Game);
 
+  game.state.add('ejemplo1', ns.Ejemplo1);
+
   game.state.start('boot');
 };
