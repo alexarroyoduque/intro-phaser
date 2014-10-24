@@ -1,11 +1,10 @@
-(function() {
+(function () {
     'use strict';
+    function Step7() {}
 
-    function Ejemplo1() {}
+    Step7.prototype = {
 
-    Ejemplo1.prototype = {
-
-        create: function() {
+        create: function () {
             this.game.physics.startSystem(Phaser.Physics.ARCADE);
             this.game.physics.arcade.gravity.y = 485;
 
@@ -18,7 +17,6 @@
             this.map.setCollisionBetween(0, this.map.tiles.length);
             this.layer = this.map.createLayer('Tiles');
             this.layer.resizeWorld();
-            // this.layer.debug = true;
 
             // player
             function setupPlayer(player) {
@@ -39,7 +37,7 @@
 
             // controls
             function createControls(gameContext) {
-                gameContext.controls = {
+                gameContext.controls= {
                     'left': gameContext.game.input.keyboard.addKey(65), //A
                     'right': gameContext.game.input.keyboard.addKey(68), //D
                     'down': gameContext.game.input.keyboard.addKey(83), //S
@@ -63,15 +61,7 @@
             }
             this.abuls = this.game.add.group();
             this.abuls.create(460, 390, 'abul');
-            this.abuls.create(720, 180, 'abul');
             this.abuls.create(880, 530, 'abul');
-            this.abuls.create(750, 530, 'abul');
-            this.abuls.create(1220, 340, 'abul');
-            this.abuls.create(1190, 400, 'abul');
-            this.abuls.create(1440, 420, 'abul');
-            this.abuls.create(1600, 420, 'abul');
-            this.abuls.create(1500, 530, 'abul');
-            this.abuls.create(1720, 530, 'abul');
             this.abuls.forEach(setupAbul, this);
 
             // bullets
@@ -87,13 +77,8 @@
             this.bullets.createMultiple(20, 'bullet');
             this.bullets.forEach(setupBullet, this);
 
-            // audio
-            this.music = this.game.add.audio('music');
-            this.shootSound = this.game.add.audio('shootSound');
-            this.music.play('', 0, 1, true);
         },
-
-        update: function() {
+        update: function () {
             this.game.physics.arcade.collide(this.player, this.layer);
             this.game.physics.arcade.collide(this.abuls, this.layer);
             this.abuls.forEach(function (abul) {
@@ -105,9 +90,9 @@
                 }
             }, this);
             this.game.physics.arcade.collide(this.abuls, this.player, this.playerIsDamaged, null, this);
+            // collide(object1, object2, collideCallback, processCallback, callbackContext)
             this.game.physics.arcade.collide(this.abuls, this.bullets, this.enemyIsDamaged, null, this);
             this.game.physics.arcade.collide(this.layer, this.bullets, this.destroyBullet, null, this);
-            // collide(object1, object2, collideCallback, processCallback, callbackContext)
 
             this.player.body.velocity.x = 0;
             if (this.controls.left.isDown) {
@@ -149,20 +134,19 @@
             if (context.game.time.now > context.player.fireTimer) {
                 var bullet = context.bullets.getFirstExists(false);
                 if (bullet) {
-                    context.shootSound.play('', 0, 0.4, false);
                     bullet.reset(context.player.x, context.player.y - 6);
                     bullet.body.velocity.x = 400 * context.player.scale.x;
                     context.player.fireTimer = context.game.time.now + 200;
                 }
             }
         },
-        render: function() {
+        render: function () {
             // this.game.debug.body(this.player);
             // this.game.debug.body(this.abuls.getAt(0));
-            this.game.debug.spriteInfo(this.player, 30, 30);
+            // this.game.debug.spriteInfo(this.player, 30, 30);
         }
     };
 
     window['intro'] = window['intro'] || {};
-    window['intro'].Ejemplo1 = Ejemplo1;
+    window['intro'].Step7 = Step7;
 }());

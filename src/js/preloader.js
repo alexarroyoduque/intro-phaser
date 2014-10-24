@@ -32,7 +32,7 @@
 
     update: function () {
       if (!!this.ready) {
-        this.game.state.start('ejemplo1');
+        this.game.state.start('step7');
       }
     },
 
