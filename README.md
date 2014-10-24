@@ -9,7 +9,7 @@ Repositorio usado para la charla del meetup [videogamearmy](http://www.meetup.co
 
 Es necesario tener instalado:
 
-1. NodeJS: decargar instalador según Sistema Operativo
+1. NodeJS: [descargar instalador](http://nodejs.org/) según Sistema Operativo
 
 2. Bower: con NodeJS instalado ejecutar `npm install -g bower`
 
