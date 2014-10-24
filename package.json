@@ -1,13 +1,24 @@
 {
   "name": "intro",
-  "description": "",
-  "readme": "",
-  "repository": "",
-  "version": "0.0.0",
-  "readme": "",
-  "repository": "",
+  "description": "Repositorio usado para la charla del meetup videogamearmy de introducción a PhaserJS. Se esplican algunos conceptos básicos y se crea un pequeño juego de plataformas.",
+  "version": "1.0.0",
+  "author": "Alejandro Arroyo Duque(http://twitter.com/AlejandroArrDuq)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alejandroarroyo/intro-phaser"
+  },
+  "keywords": [
+    "phaserjs",
+    "phaser",
+    "intro",
+    "intro-phaserjs",
+    "intro-phaser",
+    "alejandro",
+    "arroyo",
+    "duque"
+  ],
   "dependencies": {},
-  
+
   "devDependencies": {
     "bower": "*",
     "gulp": "*",

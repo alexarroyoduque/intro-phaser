@@ -1,10 +1,10 @@
 {
   "name": "intro",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "authors": [
     ""
   ],
   "dependencies": {
-    "phaser-official": "latest"
+    "phaser-official": "2.1.2"
   }
 }
