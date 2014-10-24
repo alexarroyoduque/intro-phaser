@@ -80,7 +80,9 @@
                 bullet.body.collideWorldBounds = false;
                 bullet.body.setSize(13, 13);
                 bullet.anchor.setTo(0.5, 0.5);
-                bullet.lifespan = 3000;
+                bullet.lifespan = 1000;
+                bullet.outOfBoundsKill = true;
+                bullet.checkWorldBounds = true;
                 bullet.body.allowGravity = false;
             }
             this.bullets = this.game.add.group();
