@@ -91,7 +91,7 @@ gulp.task('connect', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(paths.js, ['lint']);
+  // gulp.watch(paths.js, ['lint']);
   gulp.watch(['./src/index.html', paths.css, paths.js], ['html']);
 });
 

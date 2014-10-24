@@ -24,6 +24,7 @@
       this.load.image('bullet', 'assets/character/bullet.png');
       this.load.spritesheet('abul', 'assets/enemies/abul-abbas.png', 41, 41);
       this.load.bitmapFont('minecraftia', 'assets/minecraftia.png', 'assets/minecraftia.xml');
+      this.load.spritesheet('button', 'assets/menu/button.jpg', 240, 40);
     },
 
     create: function () {
@@ -32,7 +33,7 @@
 
     update: function () {
       if (!!this.ready) {
-        this.game.state.start('step7');
+        this.game.state.start('menu');
       }
     },
 

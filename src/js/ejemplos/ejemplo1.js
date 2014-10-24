@@ -159,7 +159,7 @@
         render: function() {
             // this.game.debug.body(this.player);
             // this.game.debug.body(this.abuls.getAt(0));
-            this.game.debug.spriteInfo(this.player, 30, 30);
+            // this.game.debug.spriteInfo(this.player, 30, 30);
         }
     };
 

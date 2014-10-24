@@ -7,11 +7,26 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: #000;
+  background: #dbdde8;
 }
 
 .game {
   width: 640px;
   height: 480px;
-  margin: 20px auto;
+  margin: 10px auto;
+}
+
+.info {
+  font-family: 'arial';
+  width: 180px;
+  margin: 10px 1px 1px 1px;
+  padding: 9px 10px;
+  float: left;
+  background-color: #f7f7f9;
+  border: 1px solid #86ace3;
+  border-radius: 4px;
+}
+
+.info h1 {
+  font-size: 22px;
 }
