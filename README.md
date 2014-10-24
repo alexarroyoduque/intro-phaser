@@ -9,15 +9,17 @@ Repositorio usado para la charla del meetup [videogamearmy](http://www.meetup.co
 
 Es necesario tener instalado:
 
-1. NodeJS
+1. NodeJS: decargar instalador según Sistema Operativo
 
-2. BowerJS: con NodeJS instalado ejecutar `npm install -g bower`
+2. Bower: con NodeJS instalado ejecutar `npm install -g bower`
 
 3. Gulp: con NodeJS instalado ejecutar `npm install -g gulp`
 
+4. [GIT](http://git-scm.com/) para clonar el repositorio
+
 ##Arrancar proyecto
 
-1. Clonar repositorio
+1. Clonar repositorio, también es posible descargarlo en .[zip](https://github.com/alejandroarroyo/intro-phaser/archive/master.zip)
     
     + `git clone https://github.com/alejandroarroyo/intro-phaser`
 
@@ -31,7 +33,7 @@ Es necesario tener instalado:
     
 3. Arrancar con gulp: `gulp`
 
-4. En el navegador ir a  http://localhost:9000
+4. En el navegador ir a  [http://localhost:9000](http://localhost:9000)
 
 
 > Alejandro Arroyo Duque
