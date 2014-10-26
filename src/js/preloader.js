@@ -25,6 +25,7 @@
       this.load.spritesheet('abul', 'assets/enemies/abul-abbas.png', 41, 41);
       this.load.bitmapFont('minecraftia', 'assets/minecraftia.png', 'assets/minecraftia.xml');
       this.load.spritesheet('button', 'assets/menu/button.jpg', 240, 40);
+      this.load.spritesheet('button2', 'assets/menu/button2.jpg', 40, 40);
     },
 
     create: function () {

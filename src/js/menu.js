@@ -38,6 +38,8 @@
                 textButton.anchor.setTo(0.5, 0.5);
             }
 
+            this.game.sound.stopAll();
+            // Botones del menu
             this.buttons = this.game.add.group();
             this.texts = this.game.add.group();
 

@@ -64,6 +64,22 @@
             this.abuls.create(880, 530, 'abul');
             this.abuls.forEach(setupAbul, this);
 
+            // buttons
+            this.buttons = this.game.add.group();
+            this.buttons.add(this.game.add.button(20, 20, 'button2', function () {
+                var stateName = this[1],
+                    context = this[0];
+                context.game.state.start(stateName);
+            }, [this, 'menu'], 2, 0, 2));
+            this.buttons.add(this.game.add.button(70, 20, 'button2', function () {
+                var stateName = this[1],
+                    context = this[0];
+                context.game.state.start(stateName);
+            }, [this, 'step6'], 3, 1, 3));
+
+            this.buttons.getAt(0).fixedToCamera = true;
+            this.buttons.getAt(1).fixedToCamera = true;
+
         },
         update: function () {
             this.game.physics.arcade.collide(this.player, this.layer);
@@ -106,8 +122,8 @@
         },
         render: function () {
             // this.game.debug.body(this.player);
+            // this.game.debug.spriteInfo(this.player, 150, 30);
             // this.game.debug.body(this.abuls.getAt(0));
-            // this.game.debug.spriteInfo(this.player, 30, 30);
         }
     };
 
