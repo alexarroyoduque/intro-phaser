@@ -1,9 +1,9 @@
 (function() {
     'use strict';
 
-    function Ejemplo1() {}
+    function Demo() {}
 
-    Ejemplo1.prototype = {
+    Demo.prototype = {
 
         create: function() {
             this.game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -106,7 +106,7 @@
                 var stateName = this[1],
                     context = this[0];
                 context.game.state.start(stateName);
-            }, [this, 'ejemplo1'], 3, 1, 3));
+            }, [this, 'Demo'], 3, 1, 3));
 
             this.buttons.getAt(0).fixedToCamera = true;
             this.buttons.getAt(1).fixedToCamera = true;
@@ -183,5 +183,5 @@
     };
 
     window['intro'] = window['intro'] || {};
-    window['intro'].Ejemplo1 = Ejemplo1;
+    window['intro'].Demo = Demo;
 }());

@@ -18,7 +18,7 @@ window.onload = function () {
   game.state.add('step5', ns.Step5);
   game.state.add('step6', ns.Step6);
   game.state.add('step7', ns.Step7);
-  game.state.add('ejemplo1', ns.Ejemplo1);
+  game.state.add('demo', ns.Demo);
 
   game.state.start('boot');
 };

@@ -1,9 +1,7 @@
 {
   "name": "intro",
   "version": "1.0.0",
-  "authors": [
-    ""
-  ],
+  "author": "Alejandro Arroyo Duque(http://twitter.com/AlejandroArrDuq)",
   "dependencies": {
     "phaser-official": "2.1.2"
   }

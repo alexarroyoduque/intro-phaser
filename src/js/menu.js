@@ -60,7 +60,7 @@
             this.buttons.add(this.game.add.button(100, 400, 'button', this.goTo, [this, 'step7'], 1, 0, 1));
             this.texts.add(this.game.add.text(100, 400, 'Jugador dispara', textStyle));
 
-            this.buttons.add(this.game.add.button(320, 50, 'button', this.goTo, [this, 'ejemplo1'], 1, 0, 1));
+            this.buttons.add(this.game.add.button(320, 50, 'button', this.goTo, [this, 'demo'], 1, 0, 1));
             this.texts.add(this.game.add.text(320, 50, 'Completo', textStyle));
 
             this.buttons.forEach(setupButton, this);

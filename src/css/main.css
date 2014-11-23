@@ -18,15 +18,16 @@ html, body {
 
 .info {
   font-family: 'arial';
-  width: 180px;
+  width: 140px;
   margin: 10px 1px 1px 1px;
   padding: 9px 10px;
   float: left;
   background-color: #f7f7f9;
   border: 1px solid #86ace3;
   border-radius: 4px;
+  font-size: 12px;
 }
 
 .info h1 {
-  font-size: 22px;
+  font-size: 18px;
 }
