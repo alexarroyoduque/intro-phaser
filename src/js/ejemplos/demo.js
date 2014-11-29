@@ -106,7 +106,7 @@
                 var stateName = this[1],
                     context = this[0];
                 context.game.state.start(stateName);
-            }, [this, 'Demo'], 3, 1, 3));
+            }, [this, 'demo'], 3, 1, 3));
 
             this.buttons.getAt(0).fixedToCamera = true;
             this.buttons.getAt(1).fixedToCamera = true;
